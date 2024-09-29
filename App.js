@@ -1,39 +1,57 @@
-// const heading=React.createElement(
-//     "h1",
-//     {id:"heading",xyz:"abc"},
-//     "hello world from react!!");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-//     console.log(heading);
+//React.createElement=ReactElemrnt-Js object=HTML element(render)
+const heading = React.createElement(
+  "h1",
+  { id: "nakka" },
+  "nakkka hello how are you"
+);
+const root = ReactDOM.createRoot(document.getElementById("na"));
+console.log(heading);
+//JSX=React.createElement=ReactElemrnt-Js object=HTML element(render)
+const jsxheading = (
+  <h1 id="nakka" className="n" tabIndex={5}>
+    hello nakka
+  </h1>
+);
+const an = (
+  <h1>
+    <a id="t" href="https://ibomma.online/telugu-movies/">
+      link
+    </a>
+  </h1>
+);
+const img = (
+  <img
+    src="https://th.bing.com/th/id/OIP.roeJGz3eeyhxK3XRQ0LxpQHaFj?rs=1&pid=ImgDetMain"
+    alt="description of image"
+  />
+);
+//React element
 
-// const parent=React.createElement("div",{id:"parent"},
-//     React.createElement("div",{id:"child"},
-//         React.createElement("div",{id:"na"},
-//             React.createElement("div",{id:"ma"},
-//                 React.createElement("h1",{id:"naa"},"Nakka Hanumantharo")
-//             )
-//         )            
-//     )
-// )
+const val = 1000;
 
-const parent=React.createElement("div",{id:"parent"},
-    [
-        React.createElement("div",{id:"child1"},
-            [
-                React.createElement("h1",{},"I am child1  h1 tag"),
-                React.createElement("h2",{},"I am child1 h2 tag")
-            ]
-            
-        ),
-        React.createElement("div",{id:"child2"},
-            [
-                React.createElement("h1",{},"i am child2 h1 tag "),
-                React.createElement("h2",{},"i am child2 h2 tag")
-            ]
-        )
+//React functional components
+const Head1 = () => <h1 className="nakka">React functional component</h1>;
+const Head = () => {
+  return (
+    <div>
+      <Head1 />
 
-]
-    
-)
-//console.log(heading);
-const root=ReactDOM.createRoot(document.getElementById("na"));
-root.render(parent);
+      <h1>component composition</h1>
+    </div>
+  );
+};
+const Hea = (
+  <div>
+    <h1 className="nakka">
+      Reactelementtttttttttttttttttttttttttttttttttttttt
+    </h1>
+    {Head()}
+    <Head></Head>
+    <Head />
+  </div>
+);
+
+root.render(Hea);

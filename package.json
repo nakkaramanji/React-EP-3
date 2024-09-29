@@ -1,0 +1,25 @@
+{
+  "name": "after-exams",
+  "version": "1.0.0",
+  "description": "",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"parcel n.html",
+    "build":"parcel build n.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browsersList": [
+    "last 2 chrome versions"
+  ]
+}
